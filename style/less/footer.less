@@ -1,0 +1,187 @@
+//http://icarda8.stg.srv05.devcloud.vardot.io/
+@import "variables.less";
+
+.footer {
+  background-color: @prime-color;
+  margin-top: 80px;
+  padding: 60px 55px;
+  @media (max-width: @ipadpro) {
+    margin-top: 30px;
+    padding: 30px 40px;
+    font-size: 12px;
+  }
+  @media (max-width: @ipad) {
+    padding: 20px 0;
+  }
+  @media (max-width: @mobile) {
+    padding: 20px;
+    //display: none;
+  }
+
+  .col {
+    border-left: 1px solid @footer-border;
+    @media (max-width: @mobile) {
+      border-bottom: 1px solid @footer-border;
+      border-left: none;
+      &:last-child {
+        border-bottom: none;
+      }
+
+    }
+
+    .ul-header {
+      margin-bottom: 15px;
+
+      h4 {
+        font-size: 16px;
+        font-family: @main-font-bold;
+        color: @info-color;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+
+        .fa {
+          display: none;
+        }
+
+        @media (max-width: @mobile) {
+          .fa {
+            display: inline-block;
+            padding: 0 5px;
+          }
+
+          .fa-caret-up {
+            display: none;
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        padding-left: 0;
+        padding-bottom: 10px;
+        color: @secondary-color;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: capitalize;
+        width: 100%;
+
+        &.fa {
+          a {
+            font-family: @main-font;
+          }
+        }
+
+        @media (max-width: @mobile) {
+          display: none;
+        }
+      }
+    }
+
+    .site-list {
+      .ul-header {
+        margin-top: 30px;
+      }
+    }
+
+    .phone-icon {
+      &::before {
+        display: inline-block;
+        content: url('../../images/phone.svg');
+        vertical-align: sub;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .find-us-list {
+    li {
+      a {
+        color: @secondary-color;
+        text-decoration: none;
+      }
+    }
+
+    .fa {
+      &::before {
+        padding-right: 10px;
+        color: @secondary-color;
+        font-size: 13px;
+      }
+    }
+
+    .fa-map-marker {
+      &::before {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .logo-social {
+    padding-top: 60px;
+    @media (max-width: @mobile) {
+      padding-top: 30px;
+      text-align: center;
+    }
+  }
+
+  #logo {
+    height: 48px;
+    @media (max-width: @mobile) {
+      margin: 5px 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .social-media {
+    padding-top: 39px;
+    @media (max-width: @mobile) {
+      padding-top: 20px;
+    }
+
+    .fa {
+      padding: 30px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline;
+      color: #ffffff; //margin-left: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.bottom-footer {
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: @footer-color;
+  text-align: center;
+
+  p {
+    font-size: 11px;
+    color: white;
+    padding-top: 10px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding-left: 0;
+    padding-bottom: 10px;
+    color: @prime-color;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+  }
+}
+.events h4 {
+  padding-left: 0;
+}

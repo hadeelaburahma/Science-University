@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+body .header {
+  background-color: white;
+}
+.error_message {
+  text-align: center;
+  font-family: 'Open Sans Bold';
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  background-color: #021a4e;
+  padding: 15px;
+  display: none;
+}
+.error_message span {
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+.login-form {
+  margin: 60px auto;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .login-form {
+    width: 80%;
+  }
+}
+.login-form .login-label {
+  text-align: left;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold';
+  font-size: 20px;
+}
+.login-form .login-input {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  color: #021a4e;
+}
+@media (max-width: 767px) {
+  .login-form .login-input {
+    margin-bottom: 15px;
+  }
+}
+.login-form .submit-btn {
+  font-family: 'Open Sans ExtraBold';
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  float: right;
+  background-color: #021a4e;
+  color: #fff;
+}
+.login-form .submit-btn:hover {
+  color: #021a4e;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .login-form .submit-btn {
+    width: 100%;
+    float: none;
+    margin-top: 15px;
+  }
+}
+.login-form .remember {
+  float: right;
+  margin-right: 12px;
+  margin-top: 10px;
+  font-family: 'Open Sans Bold';
+  font-size: 15px;
+}
